@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forex Rates Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+
+      .red-border {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Check if Even</p>
+    <input type="number" id="numberInput" placeholder="Enter a number" />
+    <button id="checkButton">Check</button>
+    <p id="checkResult"></p>
+
+    <button id="refreshButton">Refresh Table</button>
+    <p id="errorMessage"></p>
+
+    <p id="loadingMessage" style="display: none">Loading...</p>
+    <table id="currencyTable" style="display: none"></table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
